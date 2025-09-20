@@ -12,3 +12,25 @@ Volatility, measured by the height of the boxes and the range of the whiskers, i
 The plot identifies numerous outliers, represented by individual data points, which correspond to months of extreme market performance. These negative and positive outliers are likely correlated with major socio-economic events, such as the dot-com bubble aftermath, the 2008 global financial crisis, the Brexit referendum, and the severe market disruption and subsequent recovery phases related to the COVID-19 pandemic.
 Summary of Findings:
 In summary, the analysis of FTSE 100 monthly returns from 2000-2025 reveals a market with a general tendency for positive growth but one that is subject to distinct seasonal patterns. The data provides strong evidence for historically favourable performance in April and the fourth quarter, and notable weakness in September. Furthermore, the persistent volatility and presence of extreme outliers across all months underscore the inherent risks of the equity market.
+--- Monthly Trend Analysis Summary (R Version) ---
+This analysis looks at historical data to see if certain months have, on average, performed better than others.
+
+Monthly Performance Statistics (2000-2025):
+# A tibble: 12 × 4
+   Month     mean_return median_return positive_prob
+   <ord>           <dbl>         <dbl>         <dbl>
+ 1 January         -0.68         -0.79          0.36
+ 2 February         0.84          1.76          0.76
+ 3 March           -0.01         -0.39          0.48
+ 4 April            2.36          2.32          0.72
+ 5 May              0.65          1.1           0.62
+ 6 June            -1.05         -0.52          0.38
+ 7 July             1.33          1.87          0.69
+ 8 August           0.13          0.83          0.56
+ 9 September       -0.92         -0.16          0.48
+10 October          0.77          1.82          0.64
+11 November         1.25          1.6           0.56
+12 December         1.39          1.57          0.72
+
+Historically, the best performing month on average has been April.
+Historically, the worst performing month on average has been June.
